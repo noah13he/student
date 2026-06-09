@@ -6,15 +6,14 @@
             "type": "shell",
             "command": "gcc",
             "args": [
-                "-o",
-                "${workspaceFolder}/student.exe",
                 "-Wall",
                 "-Wextra",
+                "-o",
+                "${workspaceFolder}/student.exe",
                 "${workspaceFolder}/src/main.c",
                 "${workspaceFolder}/src/student.c",
                 "${workspaceFolder}/src/search.c",
-                "${workspaceFolder}/src/sort.c",
-                "-lm"
+                "${workspaceFolder}/src/sort.c"
             ],
             "group": {
                 "kind": "build",
