@@ -78,7 +78,7 @@ void displaySearchResult(const SearchResult *result, const StudentTable *table,
 
     if (result->found) {
         printf("✓ 查找成功！\n");
-        Student *student = &table->students[result->index];
+        const Student *student = (const Student *)&table->students[result->index];
         printf("┌─────────────────────────┐\n");
         printf("│ 学号: %-6d            │\n", student->id);
         printf("│ 姓名: %-15s     │\n", student->name);
