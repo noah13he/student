@@ -8,10 +8,13 @@
             "args": [
                 "-o",
                 "${workspaceFolder}/student.exe",
+                "-Wall",
+                "-Wextra",
                 "${workspaceFolder}/src/main.c",
                 "${workspaceFolder}/src/student.c",
                 "${workspaceFolder}/src/search.c",
-                "${workspaceFolder}/src/sort.c"
+                "${workspaceFolder}/src/sort.c",
+                "-lm"
             ],
             "group": {
                 "kind": "build",
