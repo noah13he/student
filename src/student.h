@@ -7,11 +7,12 @@
 
 // 最大学生数
 #define MAX_STUDENTS 100
+#define MAX_NAME_LEN 50
 
 // 学生信息结构体
 typedef struct {
     int id;              // 学号
-    char name[50];       // 姓名
+    char name[MAX_NAME_LEN];       // 姓名
     float score;         // 成绩
 } Student;
 
